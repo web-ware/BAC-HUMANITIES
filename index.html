@@ -1,33 +1,17 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b0c0f"><meta name="description" content="BAC-HUMANITIES — كراستي الرقمية لبكالوريا آداب وفلسفة">
-  <title>BAC-HUMANITIES — كراستي الرقمية</title>
-  <script>document.documentElement.dataset.theme=localStorage.getItem('bac-theme')||'dark';</script>
-  <link rel="stylesheet" href="assets/css/style.css">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0c0f"><meta name="description" content="BAC-HUMANITIES — كراستي الرقمية لبكالوريا آداب وفلسفة">
+<title>BAC-HUMANITIES — كراستي الرقمية</title>
+<script>document.documentElement.dataset.theme=localStorage.getItem('bac-theme')||'dark';</script>
+<link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/tools.css">
 </head>
 <body>
-<div class="app-shell">
-  <aside id="sidebar" class="sidebar" aria-label="التنقل الرئيسي">
-    <div class="brand"><div class="brand-mark">ب</div><div><strong>BAC-HUMANITIES</strong><span>كراستي الرقمية</span></div></div>
-    <nav class="nav">
-      <div class="nav-title">الرئيسية</div>
-      <button data-route="home">⌂ <span>الرئيسية</span></button><button data-route="subjects">▦ <span>المواد</span></button><button data-route="focus">◷ <span>مؤقت التركيز</span></button>
-      <div class="nav-title">الأدوات</div>
-      <button data-route="generator">✦ <span>مولّد المقالة</span></button><button data-route="flashcards">◆ <span>بطاقات الاستذكار</span></button><button data-route="quizzes">✓ <span>اختبارات سريعة</span></button><button data-route="archive">▤ <span>أرشيف البكالوريا</span></button>
-      <div class="nav-title">المكتبة</div>
-      <button data-route="lessons">📖 <span>الدروس</span></button><button data-route="articles">✦ <span>المقالات</span></button><button data-route="summaries">⚡ <span>الملخصات</span></button><button data-route="concepts">◇ <span>المفاهيم</span></button><button data-route="people">♙ <span>الشخصيات</span></button><button data-route="events">◷ <span>الأحداث</span></button>
-      <div class="nav-title">مساحتي</div>
-      <button data-route="notes">✎ <span>ملاحظاتي</span></button><button data-route="favorites">★ <span>المفضلة</span></button>
-    </nav>
-    <div class="sidebar-footer"><span>باك آداب وفلسفة</span><span>2026 / 2027</span></div>
-  </aside>
-  <main class="main">
-    <header class="topbar"><button id="mobileMenu" class="icon-btn mobile-only" aria-label="فتح القائمة">☰</button><div class="search-wrap"><span>⌕</span><input id="globalSearch" type="search" placeholder="ابحث في الدروس والمقالات والمفاهيم..." autocomplete="off" aria-label="البحث العام"><div id="searchResults" class="search-results" hidden></div></div><div class="top-actions"><button id="themeToggle" class="icon-btn" aria-label="تبديل الوضع">☼</button><button data-route="notes" class="top-note">✎ <span>ملاحظة</span></button></div></header>
-    <div id="view" class="view" tabindex="-1"></div>
-  </main>
-</div>
-<div id="modalRoot"></div>
+<div class="app-shell"><aside id="sidebar" class="sidebar" aria-label="التنقل الرئيسي">
+<div class="brand"><div class="brand-mark">ب</div><div><strong>BAC-HUMANITIES</strong><span>كراستي الرقمية</span></div></div>
+<nav class="nav"><div class="nav-title">الرئيسية</div><button data-route="home">⌂ <span>الرئيسية</span></button><button data-route="subjects">▦ <span>المواد</span></button><button data-route="focus">◷ <span>مؤقت التركيز</span></button><div class="nav-title">الأدوات</div><button data-route="generator">✦ <span>مولّد المقالة</span></button><button data-route="flashcards">◆ <span>بطاقات الاستذكار</span></button><button data-route="quizzes">✓ <span>اختبارات سريعة</span></button><button data-route="archive">▤ <span>أرشيف البكالوريا</span></button><div class="nav-title">المكتبة</div><button data-route="lessons">📖 <span>الدروس</span></button><button data-route="articles">✦ <span>المقالات</span></button><button data-route="summaries">⚡ <span>الملخصات</span></button><button data-route="concepts">◇ <span>المفاهيم</span></button><button data-route="people">♙ <span>الشخصيات</span></button><button data-route="events">◷ <span>الأحداث</span></button><div class="nav-title">مساحتي</div><button data-route="notes">✎ <span>ملاحظاتي</span></button><button data-route="favorites">★ <span>المفضلة</span></button></nav>
+<div class="sidebar-footer"><span>باك آداب وفلسفة</span><span>2026 / 2027</span></div></aside>
+<main class="main"><header class="topbar"><button id="mobileMenu" class="icon-btn mobile-only" aria-label="فتح القائمة">☰</button><div class="search-wrap"><span>⌕</span><input id="globalSearch" type="search" placeholder="ابحث في الدروس والمقالات والمفاهيم..." autocomplete="off" aria-label="البحث العام"><div id="searchResults" class="search-results" hidden></div></div><div class="top-actions"><button id="themeToggle" class="icon-btn" aria-label="تبديل الوضع">☼</button><button data-route="notes" class="top-note">✎ <span>ملاحظة</span></button></div></header><div id="view" class="view" tabindex="-1"></div></main></div><div id="modalRoot"></div>
 <script src="assets/data/content.js"></script><script src="assets/data/tools-data.js"></script><script src="assets/data/archive.js"></script><script src="assets/js/app.js"></script><script src="assets/js/navigation.js"></script>
 </body></html>
